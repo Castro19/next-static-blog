@@ -1,3 +1,13 @@
+## Introduction
+
+Hello! My name is Cristian Castro Oliva and this will be a static blog site using Next JS and Tailwind to convert markdown files into HTML. I will try to post daily to document my struggles, accomplishments, and dedication in software development. Feel free to fork this repo, and create your own blog site as well!
+
+  <img src="https://live.staticflickr.com/65535/53626920345_38841f8755_b.jpg" width="700">
+  
+  <img src="https://live.staticflickr.com/65535/53626677343_af1eb8f4d1_b.jpg" width="700">
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
