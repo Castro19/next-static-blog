@@ -5,9 +5,9 @@ import matter from "gray-matter";
 
 const md = new MarkdownIt();
 
-function getPostContent(slug) {
+function getPostContent(month, slug) {
   try {
-    const folder = "posts/april/";
+    const folder = `posts/${month}/`;
     const filePath = `${folder}${slug}.md`;
     if (!fs.existsSync(filePath)) {
       console.error(`File not found: ${filePath}`);
@@ -24,10 +24,9 @@ function getPostContent(slug) {
 }
 
 export default function BlogPage(props) {
-  const { slug } = props.params;
-  const post = getPostContent(slug);
+  const [month, slug] = props.params.slug;
+  const post = getPostContent(month, slug);
   const messageHtml = md.render(post.content);
-  console.log(messageHtml);
   return (
     <main>
       <div className="prose mx-auto">
