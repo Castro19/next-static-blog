@@ -1,8 +1,13 @@
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
-import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Inter as FontSans } from "next/font/google";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
 
 export const metadata = {
   title: "My Software Development Journey",
@@ -34,8 +39,13 @@ export default function RootLayout({ children }) {
   );
 
   return (
-    <html lang="en" className="h-full">
-      <body className={`h-full flex flex-col ${inter.className}`}>
+    <html lang="en" suppressHydrationWarning className="h-full">
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
         {header}
         <main className="flex-grow px-4 py-2 overflow-auto">
           {" "}
