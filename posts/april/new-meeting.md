@@ -1,9 +1,5 @@
 ---
-title: "Meeting"
-bio: "Continuing Work on Projects"
-priority1: "Work on LAEP chatbot"
-priority2: "Work on Next.js Static Blog Site"
-priority3: "Learn how to use shadcn ui component library"
+title: "Meeting Template"
 ---
 
 # AI Chatbot Project - Team Meeting Agenda
